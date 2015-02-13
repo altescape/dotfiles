@@ -1,2 +1,2 @@
 # .runcom-files
-Runcom files for Vim and Bash
+Runcom and profile files for Vim, Bash etc

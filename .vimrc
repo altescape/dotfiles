@@ -46,8 +46,11 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'bling/vim-airline'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'moll/vim-node'
+Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'tomtom/tlib_vim'
+" Plugin 'garbas/vim-snipmate'
+" Plugin 'honza/vim-snippets'
 Plugin 'vim-scripts/vim-stylus'
 
 " All of your Plugins must be added before the following line

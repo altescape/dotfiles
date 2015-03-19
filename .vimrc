@@ -77,3 +77,6 @@ set expandtab 		    " Expand TABs to spaces
 " airline plugin settings 
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+
+" Set syntax colour for ES6|JavaScript
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript

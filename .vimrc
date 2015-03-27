@@ -34,6 +34,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-projectionist'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'caike/snipmate.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -52,6 +53,11 @@ Plugin 'tomtom/tlib_vim'
 " Plugin 'garbas/vim-snipmate'
 " Plugin 'honza/vim-snippets'
 Plugin 'vim-scripts/vim-stylus'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Raimondi/delimitMate'
+Plugin 'wookiehangover/jshint.vim'
+" Plugin 'Valloric/YouCompleteMe'
+Plugin 'marijnh/tern_for_vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -68,15 +74,28 @@ filetype plugin on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 syntax on
-
 set tabstop=2       	" The width of a TAB is set to 4.Still it is a \t. It is just that Vim will interpret it to be having a width of 4.
 set shiftwidth=2	    " Indents will have a width of 4
 set softtabstop=2 	  " Sets the number of columns for a TAB
 set expandtab 		    " Expand TABs to spaces
+set t_Co=256
+set background=dark
+colorscheme gruvbox
+imap <C-c> <CR><Esc>O
 
-" airline plugin settings 
+" These are the tweaks I apply to YCM's config, you don't need them but they might help.
+" YCM gives you popups and splits by default that some people might not
+" like, so these should tidy it up a bit for you.
+let g:ycm_add_preview_to_completeopt=0
+let g:ycm_confirm_extra_conf=0
+set completeopt-=preview
+
+" airline plugin settings
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+
+" jshint
+let g:syntastic_check_on_open=1
 
 " Set syntax colour for ES6|JavaScript
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript

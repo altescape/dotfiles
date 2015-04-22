@@ -33,7 +33,11 @@ Includes colours and plugins installed with vundle.
 `'z` jump to start of line for mark `z`
 
 #### Insert text on multiple lines
+
 `Ctrl` + `v` to select a column then `shift` + `I` to enter the text. Press `Esc` shows inserted text.
 
+#### Paste text and replace word
+
+`viwp`
 
 

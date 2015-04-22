@@ -50,8 +50,6 @@ Plugin 'moll/vim-node'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'tomtom/tlib_vim'
-" Plugin 'garbas/vim-snipmate'
-" Plugin 'honza/vim-snippets'
 Plugin 'vim-scripts/vim-stylus'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
@@ -90,9 +88,10 @@ let g:ycm_add_preview_to_completeopt=0
 let g:ycm_confirm_extra_conf=0
 set completeopt-=preview
 
-" airline plugin settings
+" airline plugin settings 
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+let g:airline_powerline_fonts = 1
 
 " jshint
 let g:syntastic_check_on_open=1

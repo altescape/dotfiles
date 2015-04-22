@@ -1,2 +1,5 @@
-# .runcom-files
-Runcom and profile files for Vim, Bash etc
+# Vim setup
+
+This repo contains runcom and profile files for Vim, Bash etc. but is primarily for my Vim setup.
+
+Includes colours and plugins installed with vundle.

@@ -17,12 +17,15 @@ Includes colours and plugins installed with vundle.
 
 #### Marks
 `ma` set a mark called `a`
+
 `mz` set a mark called `z`
 
-`a jump to mark `a`
-`z jump to mark `z`
+```a`` jump to mark `a`
+
+```z`` jump to mark `z`
 
 `'a` jump to start of line for mark `a`
+
 `'z` jump to start of line for mark `z`
 
 #### Insert text on multiple lines

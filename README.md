@@ -20,9 +20,9 @@ Includes colours and plugins installed with vundle.
 
 `mz` set a mark called `z`
 
-```a`` jump to mark `a`
+`` `a `` jump to mark `a`
 
-```z`` jump to mark `z`
+`` `z `` jump to mark `z`
 
 `'a` jump to start of line for mark `a`
 

@@ -6,7 +6,7 @@ Includes colours and plugins installed with vundle.
 
 ## Console window
 
-Typing `:!` + `<command` will open a console window
+Typing `:!` + `<command>` will open a console window
 
 
 

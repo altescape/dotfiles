@@ -32,7 +32,7 @@ Select a block of text and press `=` to fix formatting
 
 `` `z `` jump to mark `z`
 
-## Jump to start of line of your marks
+### Jump to start of line of your marks
 
 `'a` jump to start of line for mark `a`
 

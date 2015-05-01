@@ -50,12 +50,9 @@ Hit `Ctrl` + `v` to select a column then `shift` + `I` to enter the text. Press 
 
 ## Copying and pasting
 
-### Copy word (when cursor is anywhere within word)
-`yiw`
+Copy word (when cursor is anywhere within word) with `yiw`
 
-### Paste text and replace word
-
-`viwp`
+Paste text and replace word with `viwp`
 
 
 

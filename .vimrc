@@ -56,6 +56,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'wookiehangover/jshint.vim'
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'burnettk/vim-angular'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -98,3 +99,13 @@ let g:syntastic_check_on_open=1
 
 " Set syntax colour for ES6|JavaScript
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+
+" AngularJS
+" Add custom tags here if necessary, two examples below:
+let g:syntastic_html_tidy_ignore_errors = ['proprietary attribute "myhotcompany-']
+let g:syntastic_html_tidy_blocklevel_tags = ['myCustomTag']
+
+" Insert a new line without entering insert mode
+" http://vim.wikia.com/wiki/Insert_newline_without_entering_insert_mode
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>

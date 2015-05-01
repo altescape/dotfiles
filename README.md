@@ -4,11 +4,13 @@ Includes colours and plugins installed with vundle.
 
 # Vim
 
-## Console window
+## Run a terminal command within vim
 
-Typing `:!` + `<command>` will open a console window
+Typing `:!<command>` will open a console window
 
+## Pause vim to go to terminal and then resume vim
 
+Pause Vim with `Ctrl+z`, play in the terminal, then return to Vim with the command `fg`.
 
 
 ## Fix formatting
@@ -43,7 +45,7 @@ Select a block of text and press `=` to fix formatting
 
 ## Insert text on multiple lines
 
-Hit `Ctrl` + `v` to select a column then `shift` + `I` to enter the text. Press `Esc` shows inserted text.
+Hit `Ctrl+v` to select a column then `shift+I` to enter the text. Press `Esc` shows inserted text.
 
 
 
@@ -65,7 +67,7 @@ nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 ```
 
-We can hit `shift` + `enter` whilst in normal mode.
+We can hit `shift+enter` whilst in normal mode.
 
 
 

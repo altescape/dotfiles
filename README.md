@@ -1,4 +1,3 @@
-# Vim and Bash
 This repo contains runcom and profile files for Vim, Bash etc. but is primarily for my Vim setup.
 Includes colours and plugins installed with vundle.
 
@@ -7,14 +6,14 @@ Includes colours and plugins installed with vundle.
 
 ## Console window
 
-`q:` will open a console window
+Typing `q:` will open a console window
 
 
 
 
 ## Fix formatting
 
-`=` select a block of text and press `=`
+Select a block of text and press `=` to fix formatting
 
 
 
@@ -23,9 +22,9 @@ Includes colours and plugins installed with vundle.
 
 ### Set your marks
 
-`ma` set a mark called `a`
+`ma` set a mark called referenced with a
 
-`mz` set a mark called `z`
+`mz` set a mark referenced with z
 
 ### Jump to your marks
 
@@ -44,7 +43,7 @@ Includes colours and plugins installed with vundle.
 
 ## Insert text on multiple lines
 
-`Ctrl` + `v` to select a column then `shift` + `I` to enter the text. Press `Esc` shows inserted text.
+Hit `Ctrl` + `v` to select a column then `shift` + `I` to enter the text. Press `Esc` shows inserted text.
 
 
 

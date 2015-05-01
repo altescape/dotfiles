@@ -36,8 +36,29 @@ Includes colours and plugins installed with vundle.
 
 `Ctrl` + `v` to select a column then `shift` + `I` to enter the text. Press `Esc` shows inserted text.
 
-#### Paste text and replace word
+---
+
+#### Copying and pasting
+
+##### Copy word (when cursor is anywhere within word)
+`yiw`
+
+##### Paste text and replace word
 
 `viwp`
+
+---
+
+#### Insert linebreak without going into insert mode
+
+By adding the following lines to the .vimrc file
+
+```
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
+```
+
+
+We can hit `shift` + `enter` whilst in normal mode.
 
 

@@ -39,7 +39,6 @@ Plugin 'jlanzarotta/bufexplorer'
 Plugin 'caike/snipmate.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'kchmck/vim-coffee-script'
-" Plugin 'pangloss/vim-javascript'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'kana/vim-textobj-user'
@@ -54,7 +53,6 @@ Plugin 'vim-scripts/vim-stylus'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'wookiehangover/jshint.vim'
-" Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'burnettk/vim-angular'
 
@@ -73,14 +71,44 @@ filetype plugin on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 syntax on
-set tabstop=2       	" The width of a TAB is set to 4.Still it is a \t. It is just that Vim will interpret it to be having a width of 4.
-set shiftwidth=2	    " Indents will have a width of 4
-set softtabstop=2 	  " Sets the number of columns for a TAB
-set expandtab 		    " Expand TABs to spaces
+set hidden
+set nowrap
+set backspace=indent,eol,start  " allow backspacing over everything in insert mode
+set autoindent                  " always set autoindenting on
+set copyindent                  " copy the previous indentation on autoindenting
+set number                      " always show line numbers
+set tabstop=2                   " The width of a TAB is set to 4.Still it is a \t. It is just that Vim will interpret it to be having a width of 4.
+set shiftwidth=2                " Indents will have a width of 4
+set softtabstop=2               " Sets the number of columns for a TAB
+set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
+set expandtab                   " Expand TABs to spaces
+set showmatch                   " set show matching parenthesis
+set ignorecase                  " ignore case when searching
+set smartcase                   " ignore case if search pattern is all lowercase, case-sensitive otherwise
+set smarttab                    " insert tabs on the start of a line according to shiftwidth, not tabstop
+set hlsearch                    " highlight search terms
+set incsearch                   " show search matches as you type
 set t_Co=256
 set background=dark
 colorscheme gruvbox
+set title                        " change the terminal's title
+set visualbell                   " don't beep
+set noerrorbells                 " don't beep
 imap <C-c> <CR><Esc>O
+set nobackup
+set noswapfile
+set pastetoggle=<F2>
+
+" genius!: http://nvie.com/posts/how-i-boosted-my-vim/#get-efficient-shortcut-mappings
+nnoremap ; :
+
+" Stop using the blasted arrows
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" READ MORE HERE: http://nvie.com/posts/how-i-boosted-my-vim/
 
 " These are the tweaks I apply to YCM's config, you don't need them but they might help.
 " YCM gives you popups and splits by default that some people might not
@@ -109,3 +137,6 @@ let g:syntastic_html_tidy_blocklevel_tags = ['myCustomTag']
 " http://vim.wikia.com/wiki/Insert_newline_without_entering_insert_mode
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
+
+" Deletes all buffers
+command Bdeleteall 1,1000bd

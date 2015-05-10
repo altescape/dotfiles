@@ -69,6 +69,10 @@ nmap <CR> o<Esc>
 
 We can hit `shift+enter` whilst in normal mode.
 
+## Deleting stuff between brackets
+```
+di(
+```
 
 
 

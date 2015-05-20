@@ -145,8 +145,8 @@ command Bdeleteall 1,1000bd
 let g:NERDTreeWinPos = "right"
 
 " NERDTree quick commands
-nmap n :NERDTreeFocus<CR>
-nmap nn :NERDTreeToggle<CR>
+nmap <space> :NERDTreeFocus<CR>
+nmap <space><space> :NERDTreeToggle<CR>
 
 " NERDTree move quickly between views with CTRL + J and CTRL + K
 nmap <C-J> <C-W>j<C-W>

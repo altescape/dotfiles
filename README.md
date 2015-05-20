@@ -74,10 +74,7 @@ We can hit `shift+enter` whilst in normal mode.
 
 ## NERDTree
 ### Toggle and Focus
-`n` and `nn`
-
-### Traversing views
-`Ctrl + j` and `Ctrl + k`
+`space` and `space space`
 
 
 

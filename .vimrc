@@ -147,3 +147,7 @@ let g:NERDTreeWinPos = "right"
 " NERDTree quick commands
 nmap n :NERDTreeFocus<CR>
 nmap nn :NERDTreeToggle<CR>
+
+" NERDTree move quickly between views with CTRL + J and CTRL + K
+nmap <C-J> <C-W>j<C-W>
+nmap <C-K> <C-W>k<C-W>

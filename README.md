@@ -72,5 +72,12 @@ We can hit `shift+enter` whilst in normal mode.
 ## Deleting stuff between brackets, single-quotes, double-quotes, etc
 `di(` or `di{` or `di[` or `di'` or `di"`
 
+## NERDTree
+### Toggle and Focus
+`n` and `nn`
+
+### Traversing views
+`Ctrl + j` and `Ctrl + k`
+
 
 

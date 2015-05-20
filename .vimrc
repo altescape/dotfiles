@@ -140,3 +140,6 @@ nmap <CR> o<Esc>
 
 " Deletes all buffers
 command Bdeleteall 1,1000bd
+
+" NERDTree opens always on the right
+let g:NERDTreeWinPos = "right"

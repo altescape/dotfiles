@@ -143,3 +143,7 @@ command Bdeleteall 1,1000bd
 
 " NERDTree opens always on the right
 let g:NERDTreeWinPos = "right"
+
+" NERDTree quick commands
+nmap n :NERDTreeFocus<CR>
+nmap nn :NERDTreeToggle<CR>

@@ -20,11 +20,19 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git osx)
+
+TERM=xterm-256color
 
 # User configuration
-
-export PATH="/Users/michaelwatts/.rbenv/shims:/Users/michaelwatts/.rbenv/bin:/usr/local/git/bin:/usr/bin:/usr/local/sbin:/usr/local/bin/psql:/usr/local/php5-5.5.4-20131001-085153/bin:/usr/bin/composer:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/bin"
+export PATH="/usr/bin:/usr/local/sbin:/usr/local/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/usr/local/bin/psql:$PATH"
+export PATH="/usr/local/php5-5.5.4-20131001-085153/bin:$PATH"
+export PATH="/usr/bin/composer:$PATH"
+export PATH="/usr/local/mysql/bin:$PATH"
+export PATH="/opt/X11/bin:$PATH"
+export PATH="/usr/local/git/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

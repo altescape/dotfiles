@@ -53,7 +53,7 @@ Plugin 'vim-scripts/vim-stylus'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'wookiehangover/jshint.vim'
-Plugin 'marijnh/tern_for_vim'
+"Plugin 'marijnh/tern_for_vim'
 Plugin 'burnettk/vim-angular'
 
 " All of your Plugins must be added before the following line
@@ -147,3 +147,5 @@ let g:NERDTreeWinPos = "right"
 " NERDTree quick commands
 nmap <space> :NERDTreeFocus<CR>
 nmap <space><space> :NERDTreeToggle<CR>
+
+set mouse=nicr

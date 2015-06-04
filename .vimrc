@@ -31,7 +31,7 @@ Plugin 'ap/vim-css-color'
 Plugin 'bling/vim-airline'
 Plugin 'burnettk/vim-angular'
 Plugin 'caike/snipmate.vim'
-Plugin 'digitaltoad/vim-jade'
+" Plugin 'digitaltoad/vim-jade'
 Plugin 'godlygeek/tabular'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'kana/vim-textobj-user'
@@ -40,7 +40,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'moll/vim-node'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'nelstrom/vim-textobj-rubyblock'
+" Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'Raimondi/delimitMate'
@@ -49,13 +49,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tlib_vim'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-projectionist'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-rake'
+" Plugin 'tpope/vim-bundler'
+" Plugin 'tpope/vim-projectionist'
+" Plugin 'tpope/vim-rails'
+" Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-surround'
 Plugin 'Valloric/vim-operator-highlight'
-Plugin 'vim-ruby/vim-ruby'
+" Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/vim-stylus'
 Plugin 'wookiehangover/jshint.vim'
 
@@ -141,7 +141,6 @@ let g:syntastic_html_tidy_blocklevel_tags = ['myCustomTag']
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
-" Deletes all buffers
 command Bdeleteall 1,1000bd
 
 " NERDTree opens always on the right

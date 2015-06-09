@@ -27,7 +27,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tlib_vim'
 Plugin 'tpope/vim-surround'
-Plugin 'Valloric/vim-operator-highlight'
 Plugin 'vim-scripts/vim-stylus'
 Plugin 'wookiehangover/jshint.vim'
 
@@ -56,9 +55,13 @@ set smartcase                   " ignore case if search pattern is all lowercase
 set smarttab                    " insert tabs on the start of a line according to shiftwidth, not tabstop
 set hlsearch                    " highlight search terms
 set incsearch                   " show search matches as you type
-set t_Co=256
 set background=dark
-colorscheme altescape 
+" solarized options 
+let g:solarized_visibility="high"
+let g:solarized_contrast="high"
+let g:solarized_termcolors=16
+let g:solarized_termtrans=1
+colorscheme solarized
 set title                        " change the terminal's title
 set visualbell                   " don't beep
 set noerrorbells                 " don't beep

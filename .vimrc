@@ -1,37 +1,15 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Avoid a name conflict with L9
-" Plugin 'user/L9', {'name': 'newL9'}
-
-" My plugins
+" Plugins
 Plugin 'ap/vim-css-color'
 Plugin 'bling/vim-airline'
 Plugin 'burnettk/vim-angular'
 Plugin 'caike/snipmate.vim'
-" Plugin 'digitaltoad/vim-jade'
 Plugin 'godlygeek/tabular'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'kana/vim-textobj-user'
@@ -40,7 +18,6 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'moll/vim-node'
 Plugin 'nathanaelkane/vim-indent-guides'
-" Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'othree/yajs.vim'
 Plugin 'Raimondi/delimitMate'
@@ -49,13 +26,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tlib_vim'
-" Plugin 'tpope/vim-bundler'
-" Plugin 'tpope/vim-projectionist'
-" Plugin 'tpope/vim-rails'
-" Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-surround'
 Plugin 'Valloric/vim-operator-highlight'
-" Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/vim-stylus'
 Plugin 'wookiehangover/jshint.vim'
 
@@ -64,15 +36,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 filetype plugin on
-"
-" Brief help
-" :PluginList          - list configured plugins
-" :PluginInstall(!)    - install (update) plugins
-" :PluginSearch(!) foo - search (or refresh cache first) for foo
-" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" Options and settings
 syntax on
 set hidden
 set nowrap
@@ -93,7 +58,7 @@ set hlsearch                    " highlight search terms
 set incsearch                   " show search matches as you type
 set t_Co=256
 set background=dark
-colorscheme gruvbox
+colorscheme altescape 
 set title                        " change the terminal's title
 set visualbell                   " don't beep
 set noerrorbells                 " don't beep

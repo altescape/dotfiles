@@ -27,6 +27,8 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git osx)
 
+TERM=xterm-256color
+
 # User configuration
 export PATH="/usr/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="$HOME/.node/bin:$PATH"

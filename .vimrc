@@ -31,6 +31,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'wookiehangover/jshint.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'wavded/vim-stylus'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'vim-scripts/JavaScript-Indent'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -27,8 +27,10 @@ Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomtom/tlib_vim'
 Plugin 'tpope/vim-surround'
-Plugin 'vim-scripts/vim-stylus'
+"Plugin 'vim-scripts/vim-stylus'
 Plugin 'wookiehangover/jshint.vim'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'wavded/vim-stylus'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

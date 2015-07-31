@@ -103,6 +103,9 @@ let g:syntastic_check_on_open=1
 " Set syntax colour for ES6|JavaScript
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
+" javascript libraries syntax
+let g:used_javascript_libs = 'angularjs,angularui,requirejs,underscore,jquery,jasmine,chai'
+
 " AngularJS
 " Add custom tags here if necessary, two examples below:
 let g:syntastic_html_tidy_ignore_errors = ['proprietary attribute "myhotcompany-']

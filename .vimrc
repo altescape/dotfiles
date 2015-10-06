@@ -33,6 +33,8 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'wavded/vim-stylus'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'vim-scripts/JavaScript-Indent'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -116,6 +118,7 @@ let g:syntastic_html_tidy_blocklevel_tags = ['myCustomTag']
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
+" Buffers deleteall
 command Bdeleteall 1,1000bd
 
 " NERDTree opens always on the right
@@ -126,3 +129,9 @@ nmap <space> :NERDTreeFocus<CR>
 nmap <space><space> :NERDTreeToggle<CR>
 
 set mouse=nicr
+
+" UltiSnips Snippets
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-space>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>""

@@ -9,8 +9,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " My plugins
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'marijnh/tern_for_vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'ap/vim-css-color'
 Plugin 'majutsushi/tagbar'
@@ -104,13 +102,6 @@ map <right> <nop>
 
 " READ MORE HERE: http://nvie.com/posts/how-i-boosted-my-vim/
 
-" These are the tweaks I apply to YCM's config, you don't need them but they might help.
-" YCM gives you popups and splits by default that some people might not
-" like, so these should tidy it up a bit for you.
-let g:ycm_add_preview_to_completeopt=0
-let g:ycm_confirm_extra_conf=0
-set completeopt-=preview
-
 " airline plugin settings 
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
@@ -124,11 +115,6 @@ autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
 " javascript libraries syntax 
 let g:used_javascript_libs = 'angularjs,angularui,requirejs,underscore,jquery,jasmine,chai'
-
-" AngularJS
-" Add custom tags here if necessary, two examples below:
-let g:syntastic_html_tidy_ignore_errors = ['proprietary attribute "myhotcompany-']
-let g:syntastic_html_tidy_blocklevel_tags = ['myCustomTag']
 
 " Insert a new line without entering insert mode
 " http://vim.wikia.com/wiki/Insert_newline_without_entering_insert_mode

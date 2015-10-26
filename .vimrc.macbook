@@ -37,6 +37,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'vim-scripts/JavaScript-Indent'
 Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-unimpaired'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -86,6 +87,8 @@ imap <C-c> <CR><Esc>O
 set nobackup
 set noswapfile
 set pastetoggle=<F2>
+" Unimpaired workflow, enter paste mode, paste, esc (exits paste mode)
+nmap <leader>v yo<CR>
 
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3

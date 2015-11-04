@@ -90,10 +90,6 @@ set pastetoggle=<F2>
 " Unimpaired workflow, enter paste mode, paste, esc (exits paste mode)
 nmap <leader>v yo<CR>
 
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
-
 " genius!: http://nvie.com/posts/how-i-boosted-my-vim/#get-efficient-shortcut-mappings
 nnoremap ; :
 

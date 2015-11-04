@@ -120,9 +120,6 @@ let g:used_javascript_libs = 'angularjs,angularui,requirejs,underscore,jquery,ja
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 
-" Deletes all buffers
-command Bdeleteall 1,1000bd
-
 " NERDTree opens always on the right
 let g:NERDTreeWinPos = "right"
 
@@ -135,7 +132,7 @@ set mouse=nicr
 nmap <F8> :TagbarToggle<CR>
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<c-space>"
+let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 

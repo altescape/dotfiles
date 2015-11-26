@@ -8,27 +8,32 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" My plugins
+" Plugins
+" Functionality
 Plugin 'Shougo/neocomplete.vim'
-Plugin 'ap/vim-css-color'
 Plugin 'majutsushi/tagbar'
-Plugin 'heavenshell/vim-jsdoc'
 Plugin 'bling/vim-airline'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'godlygeek/tabular'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'kana/vim-textobj-user'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'moll/vim-node'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'tomtom/tlib_vim'
 Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-unimpaired'
+
+" Plugins
+" Syntax/Languages
+Plugin 'ap/vim-css-color'
+Plugin 'heavenshell/vim-jsdoc'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'moll/vim-node'
+Plugin 'tomtom/tlib_vim'
 Plugin 'wookiehangover/jshint.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'wavded/vim-stylus'
@@ -37,7 +42,6 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'vim-scripts/JavaScript-Indent'
 Plugin 'fatih/vim-go'
-Plugin 'tpope/vim-unimpaired'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

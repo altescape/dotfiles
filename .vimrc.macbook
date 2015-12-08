@@ -1,5 +1,7 @@
-set nocompatible              " be iMproved, required
 filetype off                  " required
+
+set exrc
+set secure
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -42,6 +44,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'vim-scripts/JavaScript-Indent'
 Plugin 'fatih/vim-go'
+Plugin 'justmao945/vim-clang'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -66,11 +69,7 @@ set backspace=indent,eol,start  " allow backspacing over everything in insert mo
 set autoindent                  " always set autoindenting on
 set copyindent                  " copy the previous indentation on autoindenting
 set number                      " always show line numbers
-set tabstop=2                   " The width of a TAB is set to 4.Still it is a \t. It is just that Vim will interpret it to be having a width of 4.
-set shiftwidth=2                " Indents will have a width of 4
-set softtabstop=2               " Sets the number of columns for a TAB
 set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
-set expandtab                   " Expand TABs to spaces
 set showmatch                   " set show matching parenthesis
 set ignorecase                  " ignore case when searching
 set smartcase                   " ignore case if search pattern is all lowercase, case-sensitive otherwise
@@ -91,8 +90,10 @@ imap <C-c> <CR><Esc>O
 set nobackup
 set noswapfile
 set pastetoggle=<F2>
-" Unimpaired workflow, enter paste mode, paste, esc (exits paste mode)
-nmap <leader>v yo<CR>
+
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 " genius!: http://nvie.com/posts/how-i-boosted-my-vim/#get-efficient-shortcut-mappings
 nnoremap ; :
@@ -104,6 +105,13 @@ map <left> <nop>
 map <right> <nop>
 
 " READ MORE HERE: http://nvie.com/posts/how-i-boosted-my-vim/
+
+" These are the tweaks I apply to YCM's config, you don't need them but they might help.
+" YCM gives you popups and splits by default that some people might not
+" like, so these should tidy it up a bit for you.
+let g:ycm_add_preview_to_completeopt=0
+let g:ycm_confirm_extra_conf=0
+set completeopt-=preview
 
 " airline plugin settings 
 let g:airline#extensions#tabline#enabled = 1
@@ -118,6 +126,11 @@ autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
 " javascript libraries syntax 
 let g:used_javascript_libs = 'angularjs,angularui,requirejs,underscore,jquery,jasmine,chai'
+
+" AngularJS
+" Add custom tags here if necessary, two examples below:
+let g:syntastic_html_tidy_ignore_errors = ['proprietary attribute "myhotcompany-']
+let g:syntastic_html_tidy_blocklevel_tags = ['myCustomTag']
 
 " Insert a new line without entering insert mode
 " http://vim.wikia.com/wiki/Insert_newline_without_entering_insert_mode
@@ -146,3 +159,15 @@ nnoremap <leader>h :nohl<CR>
 " Toggles invisibles plus shows all invisibles
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 nnoremap <leader>i :set list! list?<CR>
+
+let python_highlight_all = 1
+
+" START per project settings can be taken from here
+" and stored in .vimrc at top of project directory
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set noexpandtab
+set colorcolumn=110 " highlight column 110
+highlight ColorColumn ctermbg=white
+" END

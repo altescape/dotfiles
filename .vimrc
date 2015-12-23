@@ -122,7 +122,7 @@ nmap <space> :NERDTreeFocus<CR>
 nmap <space><space> :NERDTreeToggle<CR>
 
 " Toggle invisibles
-:nnoremap <leader>i :set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<<CR>
+nnoremap <leader>i :set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<<CR>
 
 " Highlight off
 :nnoremap <leader>h :nohl<CR>

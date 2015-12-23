@@ -87,9 +87,9 @@ set noswapfile
 set pastetoggle=<F2>
 
 
-" colour scheme options 
+" colour scheme options, use with iterms 'Arthur' colour scheme  
 set background=dark
-let g:hybrid_use_Xresources = 1
+let g:hybrid_use_Xresources=1
 colorscheme hybrid
 
 let g:indent_guides_auto_colors = 0

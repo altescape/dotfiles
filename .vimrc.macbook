@@ -28,6 +28,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-obsession'
 Plugin 'nathanaelkane/vim-indent-guides'
 
 " Plugins

@@ -212,3 +212,8 @@ nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 " Syntastic
 let g:syntastic_check_on_open = 1
 let g:syntastic_javascript_checkers = ['eslint']
+
+" Save view when unloading buffer and load view when entering buffer
+" This is good for saving code folds
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview

@@ -35,7 +35,7 @@ Plugin 'ap/vim-css-color'
 Plugin 'heavenshell/vim-jsdoc'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'moll/vim-node'
-Plugin 'digitaltoad/vim-jade'
+Plugin 'digitaltoad/vim-pug'
 Plugin 'wavded/vim-stylus'
 Plugin 'othree/yajs.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -217,3 +217,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 " This is good for saving code folds
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
+
+" Copy whole document
+:nnoremap <leader>c :%y+<CR>

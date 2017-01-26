@@ -220,3 +220,6 @@ autocmd BufWinEnter *.* silent loadview
 
 " Copy whole document
 :nnoremap <leader>c :%y+<CR>
+
+" crontab workaround
+autocmd filetype crontab setlocal nobackup nowritebackup

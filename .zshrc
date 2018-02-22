@@ -84,6 +84,7 @@ DEFAULT_USER="michaelwatts"
     alias e.='vim .'
     alias e~z='vim ~/.zshrc'
     alias ev='vim ~/.vimrc'
+    alias whatip='dig +short myip.opendns.com @resolver1.opendns.com'
 
  #   Functions
  #   ---------------------------------------------------------

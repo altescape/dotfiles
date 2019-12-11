@@ -29,3 +29,5 @@ code --install-extension TabNine.tabnine-vscode
 code --install-extension vscodevim.vim
 code --install-extension zxh404.vscode-proto3
 ```
+
+**Note:** Run `code --list-extensions | xargs -L 1 echo code --install-extension` to get a list of extensions and collate into a bunch of install commands for VS Code.

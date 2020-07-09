@@ -1,10 +1,14 @@
+To get a list of extensions run `code --list-extensions | xargs -L 1 echo code --install-extension`
+
 ```bash
 code --install-extension Alan.stylus
 code --install-extension Blodwynn.featurehighlight
 code --install-extension bungcip.better-toml
+code --install-extension chang196700.newline
 code --install-extension ctf0.save-editors-layout
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension dbankier.vscode-quick-select
+code --install-extension DmitryDorofeev.empty-indent
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension eg2.vscode-npm-script
